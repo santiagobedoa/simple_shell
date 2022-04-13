@@ -13,11 +13,9 @@ int main(int argc, char *argv[])
 	{
 		shell_interactive();
 	}
-	/**
 	else
 	{
-		shell_no_interactive();
+		shell_no_interactive(argc, argv);
 	}
-	*/
 	return (0);
 }

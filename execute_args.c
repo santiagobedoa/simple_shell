@@ -1,6 +1,5 @@
 #include "shell.h"
 
-
 char *builtin_func_list[] = {
 	"cd",
 	"exit"
@@ -11,12 +10,12 @@ int (*builtin_func[])(char **) = {
 	&own_exit
 };
 
-#include "shell.h"
-
 /**
- * num_builtins - pendiente
+ * num_builtins - return the number of builtin functions
+ *
+ * Return: number of builtin functions
  */
-int num_builtins()
+int num_builtins(void)
 {
 	return (sizeof(builtin_func_list) / (sizeof(char)));
 }
@@ -43,5 +42,5 @@ int execute_args(char **args)
 			return ((*builtin_func[i])(args));
 		}
 	}
-	return new_process(args);
+	return (new_process(args));
 }

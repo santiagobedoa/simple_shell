@@ -13,10 +13,9 @@
 #define TOK_DELIM " \t\r\n\a"
 
 /* PROTOTYPES */
-
 /*---main.c---*/
 void shell_interactive(void);
-void shell_no_interactive(void); /* FALTA COMPLETAR */
+void shell_no_interactive(int argc, char *argv[]); /* FALTA COMPLETAR */
 
 /*---shell_interactive---*/
 char *read_line(void);

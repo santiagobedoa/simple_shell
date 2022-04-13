@@ -17,22 +17,21 @@ int new_process(char **args)
 		/* child process */
 		if (execvp(args[0], args) == -1)
 		{
-			perror("error in execute_args: child process");
+			perror("error in new_process: child process");
 		}
 		exit(EXIT_FAILURE);
 	}
 	else if (pid < 0)
 	{
 		/* error forking */
-		perror("error in execute_args: forking");
+		perror("error in new_process: forking");
 	}
 	else
 	{
 		/* parent process */
-		while (!WIFEXITED(status) && !WIFSIGNALED(status))
-		{
+		do {
 			wpid = waitpid(pid, &status, WUNTRACED);
-		}
+		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
 	return (1);
 }
