@@ -17,7 +17,7 @@ int (*builtin_func[])(char **) = {
  */
 int num_builtins(void)
 {
-	return (sizeof(builtin_func_list) / (sizeof(char)));
+	return (sizeof(builtin_func_list) / (sizeof(char *)));
 }
 
 /**
@@ -28,7 +28,7 @@ int num_builtins(void)
  */
 int execute_args(char **args)
 {
-	int i;
+	int i = 0;
 
 	if (args[0] == NULL)
 	{

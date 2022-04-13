@@ -8,14 +8,16 @@
  */
 int own_cd(char **args)
 {
-	if (args == NULL)
+	if (args[1] == NULL)
 	{
-		printf("hola\n");
-		return (1);
+		fprintf(stderr, "expected argument to \"cd\"\n");
 	}
 	else
 	{
-		printf("hola mundo!\n");
-		return (1);
+		if (chdir(args[1]) != 0)
+		{
+			perror("error in own_cd.c: changing dir\n");
+		}
 	}
+	return (1);
 }
