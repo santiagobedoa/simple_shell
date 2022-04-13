@@ -7,7 +7,7 @@
  *
  * Return: 0 on success
  */
-int main(int argc, char *argv[])
+int main(void)
 {
 	if (isatty(STDIN_FILENO) == 1)
 	{
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		shell_no_interactive(argc, argv);
+		shell_non_interactive();
 	}
 	return (0);
 }
