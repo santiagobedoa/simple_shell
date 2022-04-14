@@ -2,11 +2,13 @@
 
 char *builtin_func_list[] = {
 	"cd",
+	"env",
 	"exit"
 };
 
 int (*builtin_func[])(char **) = {
 	&own_cd,
+	&own_env,
 	&own_exit
 };
 

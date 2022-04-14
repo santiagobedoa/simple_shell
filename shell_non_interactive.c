@@ -2,8 +2,6 @@
 
 /**
  * shell_non_interactive - unix command line interpreter
- * @argc: argument count
- * @argv: argument vector
  *
  * Return: void
  */

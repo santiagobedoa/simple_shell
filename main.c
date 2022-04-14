@@ -2,8 +2,6 @@
 
 /**
  * main - function that checks if our shell is called
- * @argc: argument count
- * @argv: argument vector
  *
  * Return: 0 on success
  */

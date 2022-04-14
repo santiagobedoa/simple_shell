@@ -11,6 +11,7 @@
 /* MACROS */
 #define TOK_BUFSIZE 64
 #define TOK_DELIM " \t\r\n\a"
+extern char **environ;
 
 /* PROTOTYPES */
 /*---main.c---*/
@@ -32,5 +33,6 @@ int num_builtns(void);
 /*---builtin---*/
 int own_cd(char **args);
 int own_exit(char **args);
+int own_env(char **args);
 
 #endif
