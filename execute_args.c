@@ -1,17 +1,5 @@
 #include "shell.h"
 
-char *builtin_func_list[] = {
-	"cd",
-	"env",
-	"exit"
-};
-
-int (*builtin_func[])(char **) = {
-	&own_cd,
-	&own_env,
-	&own_exit
-};
-
 /**
  * num_builtins - return the number of builtin functions
  *
@@ -19,6 +7,12 @@ int (*builtin_func[])(char **) = {
  */
 int num_builtins(void)
 {
+	char *builtin_func_list[] = {
+		"cd",
+		"env",
+		"exit"
+	};
+	
 	return (sizeof(builtin_func_list) / (sizeof(char *)));
 }
 
@@ -30,6 +24,16 @@ int num_builtins(void)
  */
 int execute_args(char **args)
 {
+	char *builtin_func_list[] = {
+		"cd",
+		"env",
+		"exit"
+	};
+	int (*builtin_func[])(char **) = {
+		&own_cd,
+		&own_env,
+		&own_exit
+	};
 	int i = 0;
 
 	if (args[0] == NULL)
