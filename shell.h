@@ -9,14 +9,13 @@
 #include <sys/wait.h>
 
 /* MACROS */
-#define TOK_BUFSIZE 64
-#define TOK_DELIM " \t\r\n\a"
+#define TOK_DELIM " \t\r\n\a\""
 extern char **environ;
 
 /* PROTOTYPES */
 /*---main.c---*/
 void shell_interactive(void);
-void shell_non_interactive(void); /* FALTA COMPLETAR */
+void shell_non_interactive(void); 
 
 /*---shell_interactive---*/
 char *read_line(void);
@@ -28,11 +27,12 @@ char *read_stream(void);
 
 /*---execute_args---*/
 int new_process(char **args);
-int num_builtns(void);
+int num_builtins(void);
 
 /*---builtin---*/
 int own_cd(char **args);
 int own_exit(char **args);
 int own_env(char **args);
+int own_help(char **args);
 
 #endif

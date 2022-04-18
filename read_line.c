@@ -14,10 +14,12 @@ char *read_line(void)
 	{
 		if (feof(stdin)) /* test for the eof */
 		{
+			free(line); /* avoid memory leaks when ctrl + d */
 			exit(EXIT_SUCCESS); /* we recieved an eof */
 		}
 		else
 		{
+			free(line); /* avoid memory leaks when getline fails */
 			perror("error in read_line: getline");
 			exit(EXIT_FAILURE);
 		}

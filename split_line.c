@@ -8,9 +8,9 @@
  */
 char **split_line(char *line)
 {
-	int bufsize = TOK_BUFSIZE;
+	int bufsize = 64;
 	int i = 0;
-	char **tokens = malloc(bufsize * sizeof(char));
+	char **tokens = malloc(bufsize * sizeof(char*));
 	char *token;
 
 	if (!tokens)
@@ -25,8 +25,8 @@ char **split_line(char *line)
 		i++;
 		if (i >= bufsize)
 		{
-			bufsize += TOK_BUFSIZE;
-			tokens = realloc(tokens, bufsize * sizeof(char));
+			bufsize += bufsize;
+			tokens = realloc(tokens, bufsize * sizeof(char*));
 			if (!tokens)
 			{
 				fprintf(stderr, "reallocation error in split_line: tokens");
