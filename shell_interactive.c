@@ -19,5 +19,10 @@ void shell_interactive(void)
 		/* avoid memory leaks */
 		free(line);
 		free(args);
+		/* exit with status */
+		if (status > 2)
+		{
+			exit(status);
+		}
 	} while (status);
 }
