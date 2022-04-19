@@ -13,7 +13,7 @@ int num_builtins(void)
 		"help",
 		"exit"
 	};
-	
+
 	return (sizeof(builtin_func_list) / (sizeof(char *)));
 }
 
