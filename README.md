@@ -1,4 +1,4 @@
-![alt text](/home/alejandrouran/Documentos/imageshell.png)
+![plot](images/imageshell.png)
 
 # Simple Shell
 
