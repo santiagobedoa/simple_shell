@@ -1,4 +1,4 @@
-![alt text](https://opensource.com/sites/default/files/lead-images/terminal_command_linux_desktop_code.jpg)
+![alt text](/home/alejandrouran/Documentos/imageshell.png)
 
 # Simple Shell
 
@@ -65,6 +65,41 @@ Non-interactive mode: echo "/bin/ls" | ./hsh
 * [x] env
 * [x] help
 * [x] exit
+
+### Examples
+
+Run shell in interactive mode:
+
+```
+ $ ./hsh
+ simple_prompt$ ls -l
+total 84
+-rw-r--r--. 1 alejandrouran alejandrouran   867 abr 20 15:36 execute_args.c
+-rwxr-xr-x. 1 alejandrouran alejandrouran 25720 abr 20 15:36 hsh
+-rw-r--r--. 1 alejandrouran alejandrouran   241 abr 20 15:36 main.c
+-rw-r--r--. 1 alejandrouran alejandrouran   645 abr 20 15:36 new_process.c
+-rw-r--r--. 1 alejandrouran alejandrouran   383 abr 20 15:36 own_cd.c
+-rw-r--r--. 1 alejandrouran alejandrouran   316 abr 20 15:36 own_env.c
+-rw-r--r--. 1 alejandrouran alejandrouran   284 abr 20 15:36 own_exit.c
+-rw-r--r--. 1 alejandrouran alejandrouran   499 abr 20 15:36 own_help.c
+drwxr-xr-x. 2 alejandrouran alejandrouran  4096 abr 20 15:36 prueba
+-rw-r--r--. 1 alejandrouran alejandrouran   579 abr 20 15:36 read_line.c
+-rw-r--r--. 1 alejandrouran alejandrouran   800 abr 20 15:36 read_stream.c
+-rw-r--r--. 1 alejandrouran alejandrouran   701 abr 20 15:36 shell.h
+-rw-r--r--. 1 alejandrouran alejandrouran   504 abr 20 15:36 shell_interactive.c
+-rw-r--r--. 1 alejandrouran alejandrouran   364 abr 20 15:36 shell_non_interactive.c
+-rw-r--r--. 1 alejandrouran alejandrouran   783 abr 20 15:36 split_line.c
+simple_prompt$ 
+```
+Run shell in non-interactive mode:
+
+```
+ $ echo "/bin/ls" | ./hsh
+ execute_args.c own_cd.c    prueba     shell_interactive.c
+ hsh     own_env.c   read_line.c    shell_non_interactive.c
+ main.c      own_exit.c  read_stream.c  split_line.c
+ new_process.c   own_help.c  shell.h
+```
 
 ## Authors
 
