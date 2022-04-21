@@ -22,6 +22,7 @@ char *read_stream(void)
 		character = getchar(); /* read first char from stream */
 		if (character == EOF)
 		{
+			free(line);
 			exit(EXIT_SUCCESS);
 		}
 		else if (character == '\n')
