@@ -42,7 +42,6 @@ To carry out this project, the c language was used.
 * strtok (man 3 strtok)
 * waitpid (man 2 waitpid)
 
-
 ## Requeriments
 
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -73,7 +72,7 @@ Run shell in interactive mode:
 ```
  $ ./hsh
  simple_prompt$ ls -l
-total 84
+ total 84
 -rw-r--r--. 1 alejandrouran alejandrouran   867 abr 20 15:36 execute_args.c
 -rwxr-xr-x. 1 alejandrouran alejandrouran 25720 abr 20 15:36 hsh
 -rw-r--r--. 1 alejandrouran alejandrouran   241 abr 20 15:36 main.c
@@ -89,7 +88,16 @@ drwxr-xr-x. 2 alejandrouran alejandrouran  4096 abr 20 15:36 prueba
 -rw-r--r--. 1 alejandrouran alejandrouran   504 abr 20 15:36 shell_interactive.c
 -rw-r--r--. 1 alejandrouran alejandrouran   364 abr 20 15:36 shell_non_interactive.c
 -rw-r--r--. 1 alejandrouran alejandrouran   783 abr 20 15:36 split_line.c
-simple_prompt$ 
+```
+```
+ $ ./hsh
+ simple_prompt$ pwd
+ /home/alejandrouran/Documentos/simple_shell
+```
+```
+ $ /hsh
+ simple_prompt$ echo “Hello, World!”
+ “Hello, World!”
 ```
 Run shell in non-interactive mode:
 
@@ -100,7 +108,10 @@ Run shell in non-interactive mode:
  main.c      own_exit.c  read_stream.c  split_line.c
  new_process.c   own_help.c  shell.h
 ```
-
+```
+ $ echo "pwd" | ./hsh
+ /home/alejandrouran/Documentos/simple_shell
+```
 ## Authors
 
 Santiago Bedoya https://github.com/santiagobedoa
