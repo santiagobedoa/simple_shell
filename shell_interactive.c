@@ -10,7 +10,6 @@ void shell_interactive(void)
 	char *line;
 	char **args;
 	int status = -1;
-	int i = 0;
 
 	do {
 		printf("simple_prompt$ "); /* print prompt symbol */
@@ -19,10 +18,6 @@ void shell_interactive(void)
 		status = execute_args(args);
 		/* avoid memory leaks */
 		free(line);
-		for (; args[i]; i++)
-		{
-			free(args[i]);
-		}
 		free(args);
 		/* exit with status */
 		if (status >= 0)
