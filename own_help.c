@@ -27,5 +27,5 @@ int own_help(char **args)
 		}
 	}
 	printf("Use the man command for information on other programs.\n\n");
-	return (1);
+	return (-1);
 }

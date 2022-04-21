@@ -19,5 +19,5 @@ int own_cd(char **args)
 			perror("error in own_cd.c: changing dir\n");
 		}
 	}
-	return (1);
+	return (-1);
 }

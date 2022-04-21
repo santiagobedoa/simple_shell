@@ -42,7 +42,7 @@ int execute_args(char **args)
 	if (args[0] == NULL)
 	{
 		/* empty command was entered */
-		return (1);
+		return (-1);
 	}
 	for (; i < num_builtins(); i++)
 	{

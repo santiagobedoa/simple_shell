@@ -9,7 +9,7 @@ void shell_non_interactive(void)
 {
 	char *line;
 	char **args;
-	int status;
+	int status = -1;
 
 	do {
 		line = read_stream();
@@ -18,5 +18,10 @@ void shell_non_interactive(void)
 		/* avoid memory leaks */
 		free(line);
 		free(args);
-	} while (status);
+		/* exit with status */
+		if (status >= 0)
+		{
+			exit(status);
+		}
+	} while (status == -1);
 }

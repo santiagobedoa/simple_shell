@@ -9,7 +9,7 @@ void shell_interactive(void)
 {
 	char *line;
 	char **args;
-	int status;
+	int status = -1;
 
 	do {
 		printf("simple_prompt$ "); /* print prompt symbol */
@@ -20,9 +20,9 @@ void shell_interactive(void)
 		free(line);
 		free(args);
 		/* exit with status */
-		if (status > 2)
+		if (status >= 0)
 		{
 			exit(status);
 		}
-	} while (status);
+	} while (status == -1);
 }
