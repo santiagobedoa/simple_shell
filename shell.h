@@ -15,7 +15,7 @@ extern char **environ;
 /* PROTOTYPES */
 /*---main.c---*/
 void shell_interactive(void);
-void shell_non_interactive(void); 
+void shell_non_interactive(void);
 
 /*---shell_interactive---*/
 char *read_line(void);
