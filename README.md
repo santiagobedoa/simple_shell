@@ -31,16 +31,16 @@ To carry out this project, the c language was used.
 
 ## List of functions and system calls.
 
-* chdir (man 2 chdir)
-* exit (man 3 exit)
-* fork (man 2 fork)
-* free (man 3 free)
-* getline (man 3 getline)
-* isatty (man 3 isatty)
-* malloc (man 3 malloc)
-* perror (man 3 perror)
-* strtok (man 3 strtok)
-* waitpid (man 2 waitpid)
+* ```chdir``` (man 2 chdir)
+* ```exit``` (man 3 exit)
+* ```fork``` (man 2 fork)
+* ```free``` (man 3 free)
+* ```getline``` (man 3 getline)
+* ```isatty``` (man 3 isatty)
+* ```malloc``` (man 3 malloc)
+* ```perror``` (man 3 perror)
+* ```strtok``` (man 3 strtok)
+* ```waitpid``` (man 2 waitpid)
 
 ## Requeriments
 
