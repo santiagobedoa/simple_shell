@@ -1,6 +1,6 @@
 ![plot](images/imageshell.png)
 
-# Simple Shell
+# Simple Shell 🐚
 
 ## Description
 
@@ -50,24 +50,25 @@ All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options
 
 Clone the repository https://github.com/santiagobedoa/simple_shell.git
 
-Compile gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+Compile 
+> gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 ## Usage
 
-Interactive mode: ./hsh
+Interactive mode: ```./hsh```
 
-Non-interactive mode: echo "/bin/ls" | ./hsh
+Non-interactive mode: ```echo "/bin/ls" | ./hsh```
 
 ### Built-ins
 
-* [x] cd
-* [x] env
-* [x] help
-* [x] exit
+* [x] ```cd```
+* [x] ```env```
+* [x] ```help```
+* [x] ```exit```
 
 ### Examples
 
-Run shell in interactive mode:
+**Run shell in interactive mode:**
 
 ```
  $ ./hsh
@@ -99,7 +100,7 @@ drwxr-xr-x. 2 alejandrouran alejandrouran  4096 abr 20 15:36 prueba
  simple_prompt$ echo “Hello, World!”
  “Hello, World!”
 ```
-Run shell in non-interactive mode:
+**Run shell in non-interactive mode:**
 
 ```
  $ echo "/bin/ls" | ./hsh
