@@ -65,10 +65,12 @@ Non-interactive mode: ```echo "/bin/ls" | ./hsh```
 * [x] ```env```
 * [x] ```help```
 * [x] ```exit```
+* [ ] ```setenv```
+* [ ] ```unsetenv```
 
 ### Examples
 
-**Run shell in interactive mode:**
+* **Run shell in interactive mode:**
 
 ```
  $ ./hsh
@@ -100,7 +102,7 @@ drwxr-xr-x. 2 alejandrouran alejandrouran  4096 abr 20 15:36 prueba
  simple_prompt$ echo “Hello, World!”
  “Hello, World!”
 ```
-**Run shell in non-interactive mode:**
+* **Run shell in non-interactive mode:**
 
 ```
  $ echo "/bin/ls" | ./hsh
