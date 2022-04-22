@@ -114,6 +114,6 @@ Run shell in non-interactive mode:
 ```
 ## Authors
 
-Santiago Bedoya https://github.com/santiagobedoa
+<a href = 'https://www.github.com/Crisgrva'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg"/></a> [@alejuran](https://github.com/alejuran) | [@santiagobedoa](https://github.com/santiagobedoa)
 
-Alejandro Urán https://github.com/alejuran
+<a href = 'https://www.twitter.com/crisgrvc'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg"/></a> [@alejuran](https://twitter.com/alejuran) | [@santiagobedoa](https://twitter.com/santiagobedoa)
